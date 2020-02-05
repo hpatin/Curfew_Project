@@ -1,0 +1,612 @@
+E80331.00    [ARREST_TOTNUM]                                Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             TOTAL NUMBER OF ARRESTS
+ 
+Total number of arrests as reported by the respondent.
+ 
+    5808           0
+    2415           1 TO 4
+     468           5 TO 9
+     161          10 TO 14
+      73          15 TO 19
+      27          20 TO 24
+      13          25 TO 29
+       7          30 TO 34
+       4          35 TO 39
+       1          40 TO 44
+       1          45 TO 49
+       6          50 TO 99999999: 50+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             68        Mean:                1.36
+ 
+Hard Minimum: [0]  Hard Maximum: [999999]
+ 
+Lead In: E80330.00[Default]
+Default Next Question: E80332.00
+--------------------------------------------------------------------------------
+E80431.00    [INCARC_TOTNUM]                                Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             TOTAL NUMBER OF INCARCERATIONS
+ 
+Total number of separate incarcerations reported by the respondent.
+ 
+    8054           0: No incarcerations
+     707           1 TO 2: incarcerations
+     150           3 TO 4: incarcerations
+      46           5 TO 6: incarcerations
+       6           7 TO 8: incarcerations
+       1           9 TO 10: incarcerations
+       1          11 TO 12: incarcerations
+       0          13 TO 14: incarcerations
+       0          15 TO 16: incarcerations
+       0          17 TO 18: incarcerations
+       0          19 TO 20: incarcerations
+  -------
+    8965
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      19
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             12        Mean:                 .19
+ 
+Hard Minimum: [0]  Hard Maximum: [999999]
+ 
+Lead In: E80430.00[Default]
+Default Next Question: E80432.00
+--------------------------------------------------------------------------------
+E80435.00    [INCARC_TOTMONTHS]                             Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             TOTAL MONTHS INCARCERATED
+ 
+Total number of months the respondent has spent incarcerated to date.
+ 
+    8321           0 TO 3: months
+      95           4 TO 6: months
+      57           7 TO 9: months
+      42          10 TO 12: months
+      77          13 TO 18: months
+      58          19 TO 24: months
+      82          25 TO 36: months
+      52          37 TO 48: months
+     180          49 TO 999: months
+  -------
+    8964
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      20
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:            207        Mean:                2.85
+ 
+Hard Minimum: [0]  Hard Maximum: [999999]
+ 
+Lead In: E80434.00[Default]
+Default Next Question: E80436.00
+--------------------------------------------------------------------------------
+R00001.00    [PUBID]                                        Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             PUBID, YOUTH CASE IDENTIFICATION CODE
+ 
+COMMENT: YOUTH CASE IDENTIFICATION CODE
+ 
+       0           0
+     998           1 TO 999
+     999        1000 TO 1999
+     997        2000 TO 2999
+     996        3000 TO 3999
+     998        4000 TO 4999
+     996        5000 TO 5999
+     994        6000 TO 6999
+     994        7000 TO 7999
+     989        8000 TO 8999
+      23        9000 TO 9999
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:           9022        Mean:              4504.3
+ 
+Hard Minimum: [0]  Hard Maximum: [99999999]
+ 
+Lead In: R72976.00[Default]
+Default Next Question: R05363.00
+--------------------------------------------------------------------------------
+R00707.00    [YPRS-1000]                                    Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             PERCENT OF PEERS BELONG TO A GANG
+ 
+(HAND CARD K)
+ 
+... [belong /belonged] to a gang that does illegal activities?
+ 
+UNIVERSE: R has been enrolled in regular school
+ 
+    5690       1 1.  Almost none (less than 10%)
+    1829       2 2.  About 25%
+     698       3 3.  About half (50%)
+     364       4 4.  About 75%
+     231       5 5.  Almost all (more than 90%)
+  -------
+    8812
+ 
+Refusal(-1)            2
+Don't Know(-2)       163
+Invalid Skip(-3)       1
+TOTAL =========>    8978   VALID SKIP(-4)       6     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              5        Mean:                1.59
+ 
+Lead In: R00706.00[Default]
+Default Next Question: R00708.00
+--------------------------------------------------------------------------------
+R03437.00    [YSAQ-236]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             WHO SETS RS CURFEW LIMITS?
+ 
+Who set the limits on how late you stay out at night?
+ 
+UNIVERSE: R <= 13 at end of prev year; lives with mother/mother figure or 
+father/father figure
+ 
+    2337       1 PARENT OR PARENTS SET LIMITS
+     103       2 PARENTS LET ME DECIDE
+    1066       3 MY PARENTS AND I DECIDE JOINTLY
+  -------
+    3506
+ 
+Refusal(-1)            5
+Don't Know(-2)         2
+Invalid Skip(-3)       1
+TOTAL =========>    3514   VALID SKIP(-4)    5470     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              3        Mean:                1.64
+ 
+Lead In: R03436.00[Default]
+Default Next Question: R03438.00
+--------------------------------------------------------------------------------
+R03442.00    [YSAQ-241]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             R BROKE LIMITS FOR CURFEW IN LAST 30 DAYS?
+ 
+In the past 30 days, how many times have you broken the limits about how late 
+you stay out at night?
+ 
+UNIVERSE: R <= 13 at end of prev year; lives with mother/mother figure or 
+father/father figure; parent/ parent figure set limits; parent/s set curfew 
+limits or parent/s and R jointly set curfew limits
+ 
+    2374           0
+     299           1
+     224           2
+     128           3
+      61           4
+      98           5
+      16           6
+      24           7
+      15           8
+      15           9
+     143          10 TO 999: 10+
+  -------
+    3397
+ 
+Refusal(-1)            3
+Don't Know(-2)         3
+Invalid Skip(-3)       1
+TOTAL =========>    3404   VALID SKIP(-4)    5580     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             30        Mean:                1.43
+ 
+Hard Minimum: [0]  Hard Maximum: [30]
+Soft Minimum: [0]  Soft Maximum: [30]
+ 
+Lead In: R03441.00[1:1]
+Default Next Question: R03443.00
+--------------------------------------------------------------------------------
+R03449.00    [YSAQ-248]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             WHAT WOULD PARENT(S) DO IF R BREAKS CURFEW?
+ 
+Which of the following would your parent or parents do if they found out you had
+come home an hour late for no good reason?
+ 
+UNIVERSE: R <= 13 at end of prev year; lives with mother/mother figure or 
+father/father figure; parent/ parent figure set limits; parent/s set curfew 
+limits or parent/s and R jointly set curfew limits
+ 
+    1423       1 DISCUSS IT CALMLY WITH YOU
+      80       2 IGNORE IT, PRETEND THAT IT DIDN'T HAPPEN OR LET YOU GET AWAY 
+                      WITH IT
+      23       3 SULK, POUT, OR GIVE YOU THE SILENT TREATMENT
+    1502       4 TAKE AWAY A PRIVILEGE, GROUND YOU, OR GIVE YOU A CHORE
+      72       5 MAKE THREATS THAT WON'T BE KEPT
+     228       6 YELL, SHOUT, OR SCREAM AT YOU
+      64       7 USE PHYSICAL PUNISHMENT
+  -------
+    3392
+ 
+Refusal(-1)            3
+Don't Know(-2)         8
+Invalid Skip(-3)       1
+TOTAL =========>    3404   VALID SKIP(-4)    5580     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              7        Mean:                 2.9
+ 
+Lead In: R03448.00[1:1]
+Default Next Question: R03450.00
+--------------------------------------------------------------------------------
+R03603.00    [YSAQ-383]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             ANY GANG IN RS NEIGHBORHOOD OR SCHOOL
+ 
+Are there any gangs in your neighborhood or where you go to school? By gangs, we
+mean a group that hangs out together, wears gang colors or clothes, has set 
+clear boundaries of its territory or turf, protects its members and turf against
+other rival gangs through fighting or threats.
+ 
+UNIVERSE: All
+ 
+    4087       1 Yes
+    4820       0 No
+  -------
+    8907
+ 
+Refusal(-1)           14
+Don't Know(-2)        61
+Invalid Skip(-3)       2
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .46
+ 
+Lead In: R03598.00[Default] R03600.00[Default] R03602.00[Default]  
+         R03601.00[0:0]
+Default Next Question: R03604.00
+--------------------------------------------------------------------------------
+R03604.00    [YSAQ-384]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             ANY RS BROTHERS, SISTERS, FRIENDS IN A GANG?
+ 
+Do any of your brothers, sisters, cousins or friends belong to a gang?
+ 
+UNIVERSE: All
+ 
+    1879       1 Yes
+    7054       0 No
+  -------
+    8933
+ 
+Refusal(-1)           15
+Don't Know(-2)        34
+Invalid Skip(-3)       2
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .21
+ 
+Lead In: R03603.00[Default]
+Default Next Question: R03605.00
+--------------------------------------------------------------------------------
+R03605.00    [YSAQ-385]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             R EVER BELONGED TO GANG?
+ 
+Have you ever belonged to a gang?
+ 
+UNIVERSE: All
+ 
+     472       1 Yes   (Go To R03606.00)
+    8490       0 No
+  -------
+    8962
+ 
+Refusal(-1)           16
+Don't Know(-2)         4
+Invalid Skip(-3)       2
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .05
+ 
+Lead In: R03604.00[Default]
+Default Next Question: R03609.00
+--------------------------------------------------------------------------------
+R03659.00    [YSAQ-439]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             R EVER ARRESTED FOR ILLEGAL OR DELINQUENT OFFENSE?
+ 
+Have you ever been arrested by the police or taken into custody for an illegal 
+or delinquent offense (do not include arrests for minor traffic violations)?
+ 
+UNIVERSE: All
+Patch #2: Changed branching.  Allows R's of all ages to answer entire crime 
+series questions.
+ 
+     729       1 Yes   (Go To R03660.00)
+    8228       0 No
+  -------
+    8957
+ 
+Refusal(-1)           20
+Don't Know(-2)         5
+Invalid Skip(-3)       2
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .08
+ 
+Lead In: R03650.00[Default] R03656.00[Default] R03657.00[Default] 
+         R03658.00[Default]
+Default Next Question: R04434.00
+--------------------------------------------------------------------------------
+R03660.00    [YSAQ-440]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED
+ 
+In total, how many times have you been arrested?
+ 
+UNIVERSE: R has been arrested
+ 
+       0           0
+     427           1
+     116           2
+      69           3
+      39           4
+      23           5
+      12           6
+       9           7
+       4           8
+       4           9
+       3          10
+       3          11
+       4          12
+       2          13
+       1          14
+      11          15 TO 99: 15+
+  -------
+     727
+ 
+Refusal(-1)            1
+Don't Know(-2)         1
+TOTAL =========>     729   VALID SKIP(-4)    8255     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             50        Mean:                 2.4
+ 
+Hard Minimum: [1]  Hard Maximum: [99]
+ 
+Lead In: R03659.00[1:1]
+Default Next Question: R03661.00
+--------------------------------------------------------------------------------
+R05363.00    [KEY!SEX]                                      Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!SEX, RS GENDER (SYMBOL)
+ 
+COMMENT: Gender of Youth
+ 
+    4599       1 Male
+    4385       2 Female
+       0       0 No Information
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              2        Mean:                1.49
+ 
+Lead In: R00001.00[Default]
+Default Next Question: R05364.00
+--------------------------------------------------------------------------------
+R05364.01    [KEY!BDATE_M]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+     816           1: January
+     693           2: February
+     760           3: March
+     659           4: April
+     689           5: May
+     720           6: June
+     762           7: July
+     782           8: August
+     839           9: September
+     765          10: October
+     763          11: November
+     736          12: December
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.56
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Hard Minimum: [01/01/1880]  Hard Maximum: [the current date]
+ 
+Lead In: None.
+Default Next Question: R05364.02
+--------------------------------------------------------------------------------
+R05364.02    [KEY!BDATE_Y]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:           1980        Max:           1984        Mean:             1982.01
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Hard Minimum: [01/01/1880]  Hard Maximum: [the current date]
+ 
+Lead In: R05364.01[Default]
+Default Next Question: R05366.00
+--------------------------------------------------------------------------------
+R06489.00    [PC8-090]                                      Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             R EVER LIVE THROUGH HARD TIMES?
+ 
+Sometimes children go through hard times. For example, they live in a place 
+without water or electricity, or in a homeless shelter. To the best of your 
+knowledge, has [this youth] ever experienced such hard times?
+ 
+     435       1 Yes   (Go To R06490.00)
+    7440       0 No
+  -------
+    7875
+ 
+Refusal(-1)            7
+Don't Know(-2)        18
+TOTAL =========>    7900   VALID SKIP(-4)    1084     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .06
+ 
+Lead In: R06476.00[Default] R06488.00[Default]  R06434.00[1:1]
+Default Next Question: R06491.00
+--------------------------------------------------------------------------------
+R12045.00    [CV_INCOME_GROSS_YR]                           Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+/*Topcoded at the 2% level.  Truncated values are applied to the top 2 percent 
+of respondents with valid non-missing responses.  The average value of the top 2
+percent of cases is used as the value.  Negative values of -1, -2, -3, -4, or -5
+do not reflect negative monetary amounts; these numbers represent standard 
+NLSY97 codes.*/
+ 
+       3     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     100           0
+      71           1 TO 1000
+      41        1001 TO 2000
+      98        2001 TO 3000
+     139        3001 TO 5000
+     465        5001 TO 10000
+     925       10001 TO 20000
+     819       20001 TO 30000
+     835       30001 TO 40000
+     765       40001 TO 50000
+     834       50001 TO 65000
+     610       65001 TO 80000
+     397       80001 TO 100000
+     321      100001 TO 150000
+      32      150001 TO 200000
+     133      200001 TO 999999: 200001+
+  -------
+    6588
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1458
+TOTAL =========>    8046   VALID SKIP(-4)     938     NON-INTERVIEW(-5)       0
+ 
+Min:         -48100        Max:         246474        Mean:             46361.7
+ 
+Hard Minimum: [0]  Hard Maximum: [9999999]
+ 
+Lead In: R13027.00[Default]
+Default Next Question: R12046.00
+--------------------------------------------------------------------------------
+R12358.00    [CV_SAMPLE_TYPE]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE
+ 
+Sample type: Is the respondent a member of the cross-sectional sample or the 
+oversample?
+ 
+    6748       1 Cross-sectional
+    2236       0 Oversample
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .75
+ 
+Lead In: R12357.00[Default]
+Default Next Question: R12359.00
+--------------------------------------------------------------------------------
+R14826.00    [KEY!RACE_ETHNICITY]                           Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)
+ 
+COMMENT: Combined race - ethnicity variable
+ 
+    2335       1 Black
+    1901       2 Hispanic
+      83       3 Mixed Race (Non-Hispanic)
+    4665       4 Non-Black / Non-Hispanic
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                2.79
+ 
+Lead In: R05387.00[Default]
+Default Next Question: R05389.00

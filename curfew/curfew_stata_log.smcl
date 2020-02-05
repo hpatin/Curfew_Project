@@ -1,0 +1,104 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Hillary\Data_Science\Curfew_Project\curfew\curfew_stata_log.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}29 Jan 2020, 09:48:11
+{txt}
+{com}. clear * //clear all
+{txt}
+{com}. set more off // turn off "more"
+{txt}
+{com}. set cformat %7.4f // set regression output to four decimals
+{txt}
+{com}. 
+. * import dataset
+. cd C:/Users/Hillary/Data_Science/Curfew_Project/curfew
+{res}C:\Users\Hillary\Data_Science\Curfew_Project\curfew
+{txt}
+{com}. insheet using curfew.csv, clear
+{txt}(20 vars, 8,984 obs)
+
+{com}. 
+. * describe dataset
+. summarize
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}e8033100 {c |}{res}      8,984    1.359862     3.60278          0         68
+{txt}{space 4}e8043100 {c |}{res}      8,984    .1859973    .7297833         -3         12
+{txt}{space 4}e8043500 {c |}{res}      8,984    2.833148    14.67141         -3        207
+{txt}{space 4}r0000100 {c |}{res}      8,984    4504.302    2603.136          1       9022
+{txt}{space 4}r0070700 {c |}{res}      8,984    1.524711    1.094475         -4          5
+{txt}{hline 13}{c +}{hline 57}
+{space 4}r0343700 {c |}{res}      8,984   -1.797752    2.808392         -4          3
+{txt}{space 4}r0344200 {c |}{res}      8,984   -1.946572    3.579263         -4         30
+{txt}{space 4}r0344900 {c |}{res}      8,984    -1.39203    3.515859         -4          7
+{txt}{space 4}r0360300 {c |}{res}      8,984     .439114    .5411586         -3          1
+{txt}{space 4}r0360400 {c |}{res}      8,984    .1992431     .433917         -3          1
+{txt}{hline 13}{c +}{hline 57}
+{space 4}r0360500 {c |}{res}      8,984    .0491986    .2359852         -3          1
+{txt}{space 4}r0365900 {c |}{res}      8,984    .0771371    .2857606         -3          1
+{txt}{space 4}r0366000 {c |}{res}      8,984   -3.481745    2.005142         -4         50
+{txt}{space 4}r0536300 {c |}{res}      8,984     1.48809     .499886          1          2
+{txt}{space 4}r0536401 {c |}{res}      8,984    6.555988    3.469429          1         12
+{txt}{hline 13}{c +}{hline 57}
+{space 4}r0536402 {c |}{res}      8,984     1982.01     1.39687       1980       1984
+{txt}{space 4}r0648900 {c |}{res}      8,984   -.4390027    1.339863         -4          1
+{txt}{space 4}r1204500 {c |}{res}      8,984     33996.3    41506.82     -48100     246474
+{txt}{space 4}r1235800 {c |}{res}      8,984    .7511131    .4323922          0          1
+{txt}{space 4}r1482600 {c |}{res}      8,984    2.787845    1.313645          1          4
+{txt}
+{com}. 
+. * rename variables
+. rename (e8033100 e8043100 e8043500 r0000100 r0070700 r0343700 r0344200 ///
+> r0344900 r0360300 r0360400 r0360500 r0365900 r0366000 r0536300 r0536401 r0536402 ///
+> r0648900 r1204500 r1235800 r1482600) (ARREST_TOT INCAR_TOT INCAR_TOT_MO PUBID PERC_PEERS_GANG ///
+> WHO_SETS_CURF BR_CURF_L30 CURF_ENFORCM NEIGH_SCH_GANG SIB_FR_GANG EV_GANG ///
+> R_ARRESTED_EV ARREST_TOT97 SEX BIRTH_MO BIRTH_YR HARD_TIMES97 HH_INCOME97 ///
+> CV_SAMPLE_TYPE RACE_ETH)
+{res}{txt}
+{com}. 
+. describe
+
+{txt}Contains data
+  obs:{res}         8,984                          
+{txt} vars:{res}            20                          
+{txt} size:{res}       233,584                          
+{txt}{hline}
+              storage   display    value
+variable name   type    format     label      variable label
+{hline}
+{p 0 48}{res}{bind:ARREST_TOT     }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}E8033100{p_end}
+{p 0 48}{bind:INCAR_TOT      }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}E8043100{p_end}
+{p 0 48}{bind:INCAR_TOT_MO   }{txt}{bind: int     }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}E8043500{p_end}
+{p 0 48}{bind:PUBID          }{txt}{bind: int     }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0000100{p_end}
+{p 0 48}{bind:PERC_PEERS_GANG}{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0070700{p_end}
+{p 0 48}{bind:WHO_SETS_CURF  }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0343700{p_end}
+{p 0 48}{bind:BR_CURF_L30    }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0344200{p_end}
+{p 0 48}{bind:CURF_ENFORCM   }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0344900{p_end}
+{p 0 48}{bind:NEIGH_SCH_GANG }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0360300{p_end}
+{p 0 48}{bind:SIB_FR_GANG    }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0360400{p_end}
+{p 0 48}{bind:EV_GANG        }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0360500{p_end}
+{p 0 48}{bind:R_ARRESTED_EV  }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0365900{p_end}
+{p 0 48}{bind:ARREST_TOT97   }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0366000{p_end}
+{p 0 48}{bind:SEX            }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0536300{p_end}
+{p 0 48}{bind:BIRTH_MO       }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0536401{p_end}
+{p 0 48}{bind:BIRTH_YR       }{txt}{bind: int     }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0536402{p_end}
+{p 0 48}{bind:HARD_TIMES97   }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R0648900{p_end}
+{p 0 48}{bind:HH_INCOME97    }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}R1204500{p_end}
+{p 0 48}{bind:CV_SAMPLE_TYPE }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R1235800{p_end}
+{p 0 48}{bind:RACE_ETH       }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}R1482600{p_end}
+{txt}{hline}
+Sorted by: 
+{res}     Note: Dataset has changed since last saved.
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Hillary\Data_Science\Curfew_Project\curfew\curfew_stata_log.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}29 Jan 2020, 09:48:12
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

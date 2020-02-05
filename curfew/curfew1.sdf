@@ -1,0 +1,25 @@
+
+
+Reference
+Number     Year  Variable Description                                      Question Name       
+-------------------------------------------------------------------------------------------------
+E80331.00  XRND  TOTAL NUMBER OF ARRESTS                                   ARREST_TOTNUM       
+E80431.00  XRND  TOTAL NUMBER OF INCARCERATIONS                            INCARC_TOTNUM       
+E80435.00  XRND  TOTAL MONTHS INCARCERATED                                 INCARC_TOTMONTHS    
+R00001.00  1997  PUBID, YOUTH CASE IDENTIFICATION CODE                     PUBID               
+R00707.00  1997  PERCENT OF PEERS BELONG TO A GANG                         YPRS-1000           
+R03437.00  1997  WHO SETS RS CURFEW LIMITS?                                YSAQ-236            
+R03442.00  1997  R BROKE LIMITS FOR CURFEW IN LAST 30 DAYS?                YSAQ-241            
+R03449.00  1997  WHAT WOULD PARENT(S) DO IF R BREAKS CURFEW?               YSAQ-248            
+R03603.00  1997  ANY GANG IN RS NEIGHBORHOOD OR SCHOOL                     YSAQ-383            
+R03604.00  1997  ANY RS BROTHERS, SISTERS, FRIENDS IN A GANG?              YSAQ-384            
+R03605.00  1997  R EVER BELONGED TO GANG?                                  YSAQ-385            
+R03659.00  1997  R EVER ARRESTED FOR ILLEGAL OR DELINQUENT OFFENSE?        YSAQ-439            
+R03660.00  1997  TOTAL # TIMES R ARRESTED                                  YSAQ-440            
+R05363.00  1997  KEY!SEX, RS GENDER (SYMBOL)                               KEY!SEX             
+R05364.01  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)               KEY!BDATE_M         
+R05364.02  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)               KEY!BDATE_Y         
+R06489.00  1997  R EVER LIVE THROUGH HARD TIMES?                           PC8-090             
+R12045.00  1997  GROSS HH INCOME IN PAST YEAR                              CV_INCOME_GROSS_YR  
+R12358.00  1997  SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE               CV_SAMPLE_TYPE      
+R14826.00  1997  KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)  KEY!RACE_ETHNICITY  
